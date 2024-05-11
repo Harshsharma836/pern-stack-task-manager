@@ -50,6 +50,9 @@ To create and apply database migrations, use the following command:
 npx prisma migrate dev --name your_migration_name
 ```
 
+Postman Collection
+Access the Postman collection for the deployed APIs on AWS : https://www.postman.com/planetary-firefly-68128/workspace/reactnode-sandbox/collection/30161518-2cc90a67-5789-4afc-811d-2ea3282e3df2?action=share&creator=30161518.
+
 ## Images
 
 ![Screenshot (249)](https://github.com/Harshsharma836/pern-stack-task-manager/assets/70514943/2a75a4d5-fa99-4e01-8ec6-8b1bddf0c18d)
