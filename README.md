@@ -44,6 +44,11 @@ Create a `.env` file in the root directory with the following variables:
   CLOUDINARY_CLIENT_SECRET=
   ```
 
+## Prisma Migrations
+To create and apply database migrations, use the following command:
+```
+npx prisma migrate dev --name your_migration_name
+```
 
 ## Images
 
