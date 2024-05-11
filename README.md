@@ -32,16 +32,17 @@ This web application is built using the PERN stack (PostgreSQL, Express.js, Reac
 
 ## Environment Variables
 
-Create a `.env` file in the root directory with the following variables:
+Create a `.env` file in the server root directory with the following variables:
   ```
   DATABASE_URL="postgresql://postgres:harsh@localhost:5432/mydb"
   PORT=4000
   JWT_SECRET_KEY="your_secret_key_here"
   FRONTEND_URL=http://localhost:5173
 
-  CLOUDINARY_CLIENT_NAME=
-  CLOUDINARY_CLIENT_API=
-  CLOUDINARY_CLIENT_SECRET=
+ 
+  CLOUDINARY_CLIENT_NAME=dwm3ljhsh
+  CLOUDINARY_CLIENT_API=274518429742159
+  CLOUDINARY_CLIENT_SECRET=SXWzCPFMnKq2E1XtUpiGuUYwuYg
   ```
 
 ## Prisma Migrations
