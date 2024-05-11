@@ -1,0 +1,38 @@
+// schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            Int      @id @default(autoincrement())
+  name          String
+  email         String   @unique
+  phone         String   
+  password      String
+  avatarPublicId String
+  avatarUrl     String
+  createdAt     DateTime @default(now())
+  tasks         Task[]
+}
+
+model Task {
+  id          Int      @id @default(autoincrement())
+  title       String?
+  description String?
+  status      TaskStatus @default(incomplete)
+  archived    Boolean  @default(false)
+  createdBy   Int
+  createdAt   DateTime @default(now())
+  user        User     @relation(fields: [createdBy], references: [id])
+}
+
+enum TaskStatus {
+  completed
+  incomplete
+}
